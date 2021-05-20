@@ -1,0 +1,56 @@
+/*Estilos da página index.html*/
+#menu li {
+    display: inline;
+    margin: 15px;
+   
+}
+#menu li a {
+    text-decoration: none; 
+    color: black;
+}
+#menu li a:hover {
+    color: blueviolet;
+}
+
+.titulo {
+    text-align: center;
+    background-color: rgb(103, 197, 103) ;
+}
+
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+
+/*Estilos da página contato.html*/
+
+#menu li {
+    display: inline;
+    margin: 15px;
+   
+}
+#menu li a {
+    text-decoration: none; 
+    color: black;
+    font-size: 25px;
+}
+#menu li a:hover {
+    color: blueviolet;
+}
+.margemLateral {
+ margin-right: 70px;   
+}
