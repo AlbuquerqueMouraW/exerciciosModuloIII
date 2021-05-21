@@ -25,18 +25,19 @@
         <h2>Mande uma mensagem</h2>
     <form>
         <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id='txtNome'> </div>
         <br>
-        <br>
+        
         <label for="email">E-mail:</label> <br>
-        <input type="email" id="email">
-        <br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id='txtEmail'> </div>
         <br>
         <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="50" rows="10"></textarea>
+        <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup="validaAssunto()" ></textarea>
+        <div id='txtAssunto'> </div>
         <br>
-        <br>
-        <button>Enviar</button>
+        <button onclick=" enviar()">Enviar</button>
 
     </form>
     </div>
@@ -46,7 +47,7 @@
         <p>Narnia, 10</p>
         <p>Mundo de Oz</p>
     
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.040363466283!2d31.131160014591924!3d29.978269978651674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584f7de239bbcd%3A0xca7474355a6e368b!2zUGlyw6JtaWRlcyBkZSBHaXrDqQ!5e0!3m2!1spt-BR!2sbr!4v1621351626975!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.040363466283!2d31.131160014591924!3d29.978269978651674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584f7de239bbcd%3A0xca7474355a6e368b!2zUGlyw6JtaWRlcyBkZSBHaXrDqQ!5e0!3m2!1spt-BR!2sbr!4v1621351626975!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id = 'mapa'></iframe>
         </div>
 
 </div>
@@ -62,4 +63,7 @@
         </footer>
 
 </body>
+
+<script src="../assets/js/script.js"></script>
+
 </html>
